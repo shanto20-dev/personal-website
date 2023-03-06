@@ -1,0 +1,79 @@
+.full {
+  background-color: #2d3748;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftButtons {
+  margin-left: 25rem;
+  display: flex;
+  align-items: center;
+}
+
+.leftButtons button {
+  background-color: transparent;
+  margin-right: 1.5rem;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 7px;
+  font-weight: lighter;
+}
+
+.leftButtons button:hover {
+  background-color: #475163;
+  border-radius: 6px;
+  transition: 0.3s;
+  color: rgb(165, 165, 234);
+}
+
+.rightButtons {
+  margin-right: 28rem;
+  display: flex;
+  align-items: center;
+}
+
+.rightButtons button {
+  background-color: transparent;
+  border: none;
+  color: rgb(121, 121, 220);
+}
+
+.colorpicker {
+  font-size: 24px;
+  margin-right: 6px;
+}
+
+.colorpicker:hover {
+  background-color: #475163;
+  border-radius: 6px;
+  transition: 0.3s;
+  color: rgb(165, 165, 234);
+}
+
+.initialsButton {
+  background-color: transparent;
+  border: none;
+  color: rgb(121, 121, 220);
+  font-size: 24px;
+  margin-right: 3rem;
+  font-weight: 900;
+}
+
+.moonSun {
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.moonSun:hover {
+  transform: translate(0px, -3px);
+  transition: 0.5s;
+}
+
+.slideAnimation {
+  font-size: 30px;
+  transition: 0.5s;
+  top: 100px;
+  opacity: 0;
+}

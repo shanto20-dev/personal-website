@@ -1,0 +1,176 @@
+.welcomeSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nightModeText {
+  color: white;
+}
+
+.lightModeText {
+  color: black;
+}
+
+.welcomeDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helloBlock {
+  height: 30rem;
+  width: 50rem;
+  display: flex;
+}
+
+.hello {
+  font-size: 40px;
+  /* color: white; */
+  max-height: 50px;
+}
+
+.helloUnderline {
+  height: 1px;
+  background-color: white;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 3rem;
+}
+
+.avatarBlock {
+  height: 170px;
+  width: 170px;
+  border-radius: 100%;
+  background-color: rgb(157, 101, 157);
+  margin-right: 3rem;
+}
+
+.avatar {
+  object-fit: cover;
+}
+
+.helloTextBlock {
+  display: flex;
+  flex-direction: column;
+}
+.helloSubHeader {
+  font-size: 24px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  width: 0;
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.helloBody {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: lighter;
+  margin-top: 3rem;
+}
+
+.helloFunStuff {
+  margin-top: 2rem;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.highlightsNightMode {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #2f3348;
+  text-align: left;
+  border-left: 5px solid rgb(81, 81, 218);
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.highlightsLightMode {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #edeef2;
+  text-align: left;
+  border-left: 5px solid rgb(81, 81, 218);
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.highlightsHeader {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(71, 141, 203);
+}
+
+.highlightsContent {
+  margin-top: 15px;
+  color: rgb(116, 144, 169);
+}
+
+.resumeButton {
+  background-color: transparent;
+  border: 1px solid rgb(114, 114, 190);
+  padding: 15px;
+  border-radius: 5px;
+  color: rgb(162, 90, 195);
+  font-size: 24px;
+  margin-top: 3rem;
+  transition: 0.5s;
+}
+
+.resumeButtonLight {
+  background-color: transparent;
+  border: 1px solid rgb(114, 114, 190);
+  padding: 15px;
+  border-radius: 5px;
+  color: rgb(162, 90, 195);
+  font-size: 24px;
+  margin-top: 3rem;
+  transition: 0.5s;
+}
+
+.resumeButton:hover {
+  transform: translate(1rem, 0);
+  background-color: #212435;
+}
+
+.resumeButtonLight:hover {
+  transform: translate(1rem, 0);
+  background-color: #e1e3ed;
+}
+
+.resumeIcon {
+  margin-right: 10px;
+}
