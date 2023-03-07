@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["myusername.github.io"],
+    domains: ["shanto20-dev.github.io"],
   },
 };
 
