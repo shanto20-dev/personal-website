@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/shanto20-dev.github.io/personal-website/",
-  assetPrefix: "/shanto20-dev.github.io/personal-website/",
+  basePath: "/personal-website",
+  assetPrefix: "/personal-website/",
   reactStrictMode: true,
   images: {
     domains: ["shanto20-dev.github.io"],
