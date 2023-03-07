@@ -2,7 +2,7 @@ import styles from "./welcome.module.css";
 import Image from "next/image";
 import classNames from "classnames";
 
-const Welcome = ({ nightMode }) => {
+const Welcome = ({ nightMode }: { nightMode: boolean }) => {
   return (
     <div className={styles.welcomeSection} id="about">
       <div className={styles.welcomeDiv}>
