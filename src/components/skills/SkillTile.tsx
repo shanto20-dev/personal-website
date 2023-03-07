@@ -1,6 +1,12 @@
 import styles from "./skills.module.css";
 import Image from "next/image";
 
+interface SkillTileProps {
+  skillName: string;
+  imageSource: string;
+  nightMode: boolean;
+}
+
 const SkillTile = ({ skillName, imageSource, nightMode }) => {
   return (
     <div
