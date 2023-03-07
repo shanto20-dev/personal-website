@@ -1,6 +1,9 @@
 import styles from "./navbar.module.css";
 import Image from "next/image";
-interface NavbarProps {}
+interface NavbarProps {
+  nightMode: boolean;
+  handleNightSwitch: () => void;
+}
 
 const Navbar: React.FC<NavbarProps> = ({ nightMode, handleNightSwitch }) => {
   const scrollSkills = () => {
