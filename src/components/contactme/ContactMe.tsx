@@ -25,7 +25,7 @@ const ContactMe = ({ nightMode }: { nightMode: boolean }) => {
           }>{`Send me a message!`}</h1>
         <div className={nightMode ? styles.formDiv : styles.formDivLight}>
           <form className={styles.actualForm} onSubmit={handleSubmit}>
-            <label for="name" className={styles.label}>
+            <label htmlFor="name" className={styles.label}>
               Name
             </label>
             <input
@@ -33,7 +33,7 @@ const ContactMe = ({ nightMode }: { nightMode: boolean }) => {
               name="name"
               required
             />
-            <label for="email" className={styles.label}>
+            <label htmlFor="email" className={styles.label}>
               {`Email`}
             </label>
             <input
@@ -41,7 +41,7 @@ const ContactMe = ({ nightMode }: { nightMode: boolean }) => {
               name="email"
               required
             />
-            <label for="message" className={styles.label}>
+            <label htmlFor="message" className={styles.label}>
               {`Message`}
             </label>
             <textarea
