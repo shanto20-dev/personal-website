@@ -7,7 +7,11 @@ interface SkillTileProps {
   nightMode: boolean;
 }
 
-const SkillTile = ({ skillName, imageSource, nightMode }) => {
+const SkillTile: React.FC<SkillTileProps> = ({
+  skillName,
+  imageSource,
+  nightMode,
+}) => {
   return (
     <div
       className={
