@@ -28,8 +28,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <Navbar nightMode={nightMode} handleNightSwitch={handleNightSwitch} />
       <div className={nightLightMode}>
         <Welcome nightMode={nightMode} />
-        <Skills nightMode={nightMode} />
         <Projects />
+        <Skills nightMode={nightMode} />
         <ContactMe nightMode={nightMode} />
       </div>
     </>

@@ -1,5 +1,5 @@
 .contactSection {
-  height: 50vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
 }
@@ -125,4 +125,26 @@
 .submitButtonLight:hover {
   background-color: rgb(218, 218, 242);
   transition: 0.5s;
+}
+
+.submitNotification {
+  padding: 20px;
+  background-color: green;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: all ease-in 0.4s;
+  animation: pop-up;
+}
+
+@keyframes pop-up {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(20%, 0);
+  }
 }

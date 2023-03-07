@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 const Welcome = ({ nightMode }) => {
   return (
-    <div className={styles.welcomeSection}>
+    <div className={styles.welcomeSection} id="about">
       <div className={styles.welcomeDiv}>
         <div className={styles.helloBlock}>
           <div className={styles.avatarBlock}>

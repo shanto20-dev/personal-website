@@ -29,17 +29,18 @@ const skillsArray = [
 
 const Skills = ({ nightMode }) => {
   return (
-    <div className={styles.skillsSection}>
+    <div className={styles.skillsSection} id="skills">
       <div>
         <h1 className={styles.skillsHeader}>Technologies</h1>
       </div>
       <div className={styles.skillsList}>
-        {skillsArray.map((skill) => {
+        {skillsArray.map((skill, index) => {
           return (
             <SkillTile
               skillName={skill.name}
               imageSource={skill.imageSource}
               nightMode={nightMode}
+              key={index}
             />
           );
         })}

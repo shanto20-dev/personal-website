@@ -3,14 +3,32 @@ import Image from "next/image";
 interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = ({ nightMode, handleNightSwitch }) => {
+  const scrollSkills = () => {
+    window.location.replace("/#skills");
+  };
+
+  const scrollContact = () => {
+    window.location.replace("/#contact");
+  };
+
+  const scrollAbout = () => {
+    window.location.replace("/#about");
+  };
+
+  const scrollProjects = () => {
+    window.location.replace("/#projects");
+  };
+
   return (
-    <div>
+    <div className={styles.navbar}>
       <div className={styles.full}>
         <div className={styles.leftButtons}>
-          <h2 className={styles.initialsButton}>SA.</h2>
-          <button>Projects</button>
-          <button>Skills</button>
-          <button>Contact Me</button>
+          <h2 className={styles.initialsButton} onClick={scrollAbout}>
+            SA.
+          </h2>
+          <button onClick={scrollProjects}>Projects</button>
+          <button onClick={scrollSkills}>Skills</button>
+          <button onClick={scrollContact}>Contact Me</button>
         </div>
         <div className={styles.rightButtons}>
           <button className={styles.colorpicker}>

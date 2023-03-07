@@ -7,7 +7,7 @@ const SkillTile = ({ skillName, imageSource, nightMode }) => {
       className={
         nightMode ? styles.skillTileDivNight : styles.skillTileDivLight
       }>
-      <Image src={imageSource} width={50} height={50} />
+      <Image src={imageSource} width={50} height={50} alt={skillName} />
       <p className={styles.skillName}>{skillName}</p>
     </div>
   );
