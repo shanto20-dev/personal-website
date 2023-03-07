@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Howl, Howler } from "howler";
 import { useState } from "react";
 
-const ContactMe = ({ nightMode }) => {
+const ContactMe = ({ nightMode }: { nightMode: boolean }) => {
   const successSound = new Howl({ src: ["/audio/success.wav"], volume: 0.1 });
 
   const [submitted, setSubmitted] = useState(false);
