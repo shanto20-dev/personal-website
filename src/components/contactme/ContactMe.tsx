@@ -7,7 +7,7 @@ const ContactMe = ({ nightMode }: { nightMode: boolean }) => {
   const successSound = new Howl({ src: ["/audio/success.wav"], volume: 0.1 });
 
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     successSound.play();
     setSubmitted(true);
