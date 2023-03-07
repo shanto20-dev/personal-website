@@ -35,10 +35,10 @@ const Skills = ({ nightMode }: { nightMode: boolean }) => {
       </div>
       <div className={styles.skillsList}>
         {skillsArray.map((skill, index) => {
+          if (!skill) {
+            return null;
+          }
           return (
-            if (!skill) {
-              return null;
-            }
             <SkillTile
               skillName={skill.name}
               imageSource={skill.imageSource}
