@@ -60,7 +60,7 @@ const ContactMe = ({ nightMode }) => {
       </div>
       {submitted && (
         <div className={styles.submitNotification}>
-          Message submitted! I'll get back to you as soon as possible.
+          {`Message submitted! I'll get back to you as soon as possible.`}
         </div>
       )}
     </div>
