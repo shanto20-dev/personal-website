@@ -3,7 +3,7 @@ import Image from "next/image";
 import SkillTile from "./SkillTile";
 
 const skillsArray = [
-  { name: "React", imageSource: "/images/skills/react.png" },
+  { name: "React", imageSource: "/personal-website/images/skills/react.png" },
   { name: "Next.js", imageSource: "/images/skills/nextjs.png" },
   { name: "Redux", imageSource: "/images/skills/redux.png" },
   { name: "JavaScript", imageSource: "/images/skills/javascript.png" },
