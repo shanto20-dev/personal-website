@@ -27,7 +27,7 @@ const skillsArray = [
   ,
 ];
 
-const Skills = ({ nightMode }) => {
+const Skills = ({ nightMode }: { nightMode: boolean }) => {
   return (
     <div className={styles.skillsSection} id="skills">
       <div>
