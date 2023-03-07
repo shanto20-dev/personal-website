@@ -10,7 +10,7 @@ const Welcome = ({ nightMode }: { nightMode: boolean }) => {
           <div className={styles.avatarBlock}>
             <Image
               className={styles.avatar}
-              src="/images/avatar.png"
+              src="/personal-website/images/avatar.png"
               width={200}
               height={200}
               alt="sayeef-headshot"
@@ -58,7 +58,7 @@ const Welcome = ({ nightMode }: { nightMode: boolean }) => {
           }>
           <Image
             className={styles.resumeIcon}
-            src="/images/files-logo.svg"
+            src="/personal-website/images/files-logo.svg"
             width={20}
             height={20}
             alt="Resume logo"

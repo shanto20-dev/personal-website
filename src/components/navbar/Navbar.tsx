@@ -36,7 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ nightMode, handleNightSwitch }) => {
         <div className={styles.rightButtons}>
           <button className={styles.colorpicker}>
             <Image
-              src="/images/Mediamodifier-Design.svg"
+              src="/personal-website/images/Mediamodifier-Design.svg"
               width={15}
               height={15}
               alt="Color picker"
